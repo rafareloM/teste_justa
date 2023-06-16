@@ -87,8 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
       }
       //Caso a atual seja maior, ele redefinirá o result.
       if (word.length > biggestWord.length) {
-        result = word;
-        biggestWord = result;
+        biggestWord = word;
       }
     }
     return biggestWord;
