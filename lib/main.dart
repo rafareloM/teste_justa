@@ -32,11 +32,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   String result = '';
   TextEditingController textEditingController = TextEditingController();
-  void _incrementCounter() {
-    setState(() {
-      result = findBiggestWord('eu queroo muito@@@ pizza!');
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
