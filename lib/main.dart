@@ -80,6 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
     List splittedPhrase = phrase.split(' ');
     String biggestWord = '';
     for (String word in splittedPhrase) {
+      //Regex para limpar a palavra antes de testar.
       word = word.replaceAll(RegExp('[^A-Za-z0-9]'), '');
       //Primeira atribuição do biggestWord, caso seja a primeira palavra.
       if (biggestWord == '') {
